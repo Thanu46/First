@@ -1,0 +1,9 @@
+ <h3>formparent component</h3>
+<form>
+    <label> carName</label>
+    <input typr="text" name="carname" [(ngModel)]="carName"><br><br>
+    <button type ="button" class="btn btn-success" on-click="addcar()">submit</button>
+</form>
+
+<br><br>
+<app-listchild [carsInput]="cars"></app-listchild>

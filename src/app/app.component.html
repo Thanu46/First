@@ -1,0 +1,34 @@
+<p>I am Fresher</p>
+<hr>
+<app-sun> </app-sun>
+<hr>
+<app-star></app-star>
+<hr>
+<app-formparent></app-formparent>
+<hr>
+<h1> Service Method</h1>
+<div *ngFor = "let item of bread">
+    Name of the person : {{item.name}} and {{item.age}};
+</div>
+<hr>
+<h1>Routing Program</h1>
+<br>
+<nav class="navbar navbar-expand bg-light">
+    <div class="container-fluid">
+<ul class="navbar-nav me-auto">
+    <li class="nav-item"> <a class="nav-link" [routerLink]="['']"> home</a></li>
+    <li class="nav-item"> <a class="nav-link" [routerLink]="['about']"> about</a></li>
+    <li class="nav-item"> <a class="nav-link" [routerLink]="['contact']"> contact</a></li>
+</ul>
+</div>
+</nav>
+<router-outlet></router-outlet>
+<hr>
+<app-paragraph></app-paragraph>
+<hr>
+<app-template></app-template>
+<hr>
+<app-reactive></app-reactive> 
+
+
+

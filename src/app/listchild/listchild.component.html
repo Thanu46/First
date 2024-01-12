@@ -1,0 +1,10 @@
+<h3>listchild component</h3>
+<div *ngIf="cars.length>0;then list;else no"></div>
+<ng-template #list>
+<ul>
+    <li *ngFor="let carName of cars">{{carName}}</li>
+</ul>
+</ng-template>
+<ng-template #no>
+    <p>no data</p>
+</ng-template>

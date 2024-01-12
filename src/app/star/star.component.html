@@ -1,0 +1,83 @@
+<h1>star works!</h1>
+<hr>
+<h2>{{title}}</h2>
+<ul>
+    <li *ngFor = "let fruit of fruits">
+        {{fruit}}
+    </li>
+</ul>
+<hr>
+<div>
+    <h2>{{title}}</h2>
+</div>
+  <div>
+    <table class="table table-border table-striped">
+        <tbody>
+        <tr *ngFor = "let fruit of fruits">
+              <td>{{fruit}}</td>
+        </tr>
+    </tbody>
+    </table>
+  </div>
+  <hr>
+  <h1>ngSwitch</h1>
+  <input type="text" [(ngModel)]="num">
+  <div [ngSwitch]="num">
+     <div *ngSwitchCase="1">one</div>
+     <div *ngSwitchCase="2">two</div>
+     <div *ngSwitchCase="3">three</div>
+     <div *ngSwitchCase="4">four</div>
+     <div *ngSwitchDefault>This Default</div>
+  </div>
+  <hr>
+  <h1>ngif</h1>
+  <h3 *ngIf="true">Thanalakshmi</h3>
+  <label>Checkbox</label>
+  <input type ="checkbox"[(ngModel)]="show">
+  <p *ngIf="show">show is checked</p>
+  <p *ngIf="!show">show is unchecked</p>
+  <hr>  
+  <h1>ngclass</h1>
+  <p [ngClass]="['primary','secondary','big']">Thanalakshmi</p>
+  <hr>
+  <h1>ngStyle</h1>
+  <p [ngStyle]="{'color':'blue','font-size':'30px'}">Thanalakshmi</p>
+  <hr>
+
+  <h1>Data Binding String Interpolation</h1>
+  <h2>{{firstName}}{{lastName}}</h2>
+  <hr>
+  <h1>Data Binding Property Binding</h1>
+  <h2 [innerHTML]="head"></h2>
+
+  <h1>Two way Binding</h1>
+  <p>{{name}}</p>
+  <br>
+  <input type="text"[(ngModel)]="name">
+
+  <h1>Event Binding</h1>
+  <p>increment value{{count}}</p>
+  <button on-click="click()">try</button>
+  <hr>
+  <h1> Pipes</h1>
+  <p>Unformate Date {{toDate}}</p>
+  <p>formate Date {{toDate|date}}</p>
+  <p>medium Date {{toDate|date :'medium'}}</p>
+  <p>short Date {{toDate|date :'short'}}</p>
+  <p>full Date {{toDate|date :'fullDate'}}</p>
+
+  <p> original: {{message}}</p> 
+  <p> upperCase: {{message|uppercase}}</p>
+  <p> lowerCase: {{message|lowercase}}</p>
+
+  <p> slice: {{message|slice:3:8}}</p>
+  <p> slice: {{message|slice:0:3}}</p>
+
+  <p> original: {{cash}}</p>
+  <p> currency formate: {{cash|currency}}</p>
+  <p> currency formate: {{cash|currency:'INR'}}</p>
+  
+ 
+
+ 
+ 
